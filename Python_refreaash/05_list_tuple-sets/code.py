@@ -18,3 +18,20 @@ print(len(l))
 print(len(s))
 #length of a tuple
 print(len(t))
+
+# advanced set operations
+# find the difference between two sets
+friends = {"Rolf", "Bob", "Anne"}
+abroad = {"Bob", "Anne"}
+local_friends = friends.difference(abroad)
+print(local_friends)
+# find the union between two sets
+local = {"Rolf","Anne"}
+abroad = {"Bob", "Anne"}
+friends = abroad.union(local)
+print(friends)
+# find the intersection between two sets
+local = {"Rolf","Anne"}
+abroad = {"Bob", "Anne"}
+friends = abroad.intersection(local)
+print(friends)
